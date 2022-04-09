@@ -15,19 +15,12 @@ jobs:
         # 选择一个action，可以理解为若干 steps.run，有利于代码复用
         uses: actions/checkout@master
       # 部署到腾讯云服务器
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@v2.0.7
-        env:
-            # 本地.ssh文件下的私钥id_rsa，存在secrets的TOKEN中
-            SSH_PRIVATE_KEY: ${{ secrets.TOKEN }}
-            # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
-            ARGS: "-avzr --delete"
-            # 源目录，相对于$GITHUB_WORKSPACE根目录的路径
-            SOURCE: ""
-            # 服务器域名
-            REMOTE_HOST: ${{ secrets.IP }}
-            # 腾讯云默认用户名为root
-            REMOTE_USER: "root"
-            # 目标目录
-            TARGET: "/www/wwwroot/uptime.seeyue.top/test"
+      - name: deploy file to server
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: 'root'   #ssh user name
+          server: '${{ secrets.IP }}' #引用之前创建好的secret
+          ssh_private_key: ${{ secrets.TOKEN }} #引用之前创建好的secret
+          local_path: './*'  # 对应我们项目build的文件夹路径
+          remote_path: '/www/wwwroot/uptime.seeyue.top/test'
 
