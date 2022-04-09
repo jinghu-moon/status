@@ -36,13 +36,13 @@ window.Config = {
       text: "主页",
       url: "https://seeyue.top",
     },
-    // {
-    //   text: "GitHub",
-    //   url: "https://github.com/yb/uptime-status",
-    // },
     {
       text: "博客",
       url: "https://blog.seeyue.top",
+    },
+    {
+      text: "GitHub",
+      url: "https://github.com/jinghu-moon/website-status",
     },
   ],
 };

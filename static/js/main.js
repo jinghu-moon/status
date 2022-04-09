@@ -10481,20 +10481,25 @@
             children: [
               Object(c.jsxs)("p", {
                 children: [
-                  "\u57fa\u4e8e ",
+                  "基于 ",
                   Object(c.jsx)(f, {
                     to: "https://uptimerobot.com/",
                     text: "UptimeRobot",
                   }),
-                  " \u63a5\u53e3\u5236\u4f5c\uff0c\u68c0\u6d4b\u9891\u7387 5 \u5206\u949f",
+                  " 接口制作，检测频率 5 分钟",
                 ],
               }),
               Object(c.jsxs)("p", {
                 children: [
-                  "\xa9 2020 - 2022 \u00a0",
+                  "\xa9 2022 - 2022\u00a0",
+                  Object(c.jsx)(f, {
+                    to: "https://seeyue.top",
+                    text: "镜湖月",
+                  }),
+                  "\u00a0&\u00a0Project\u00a0from\u00a0",
                   Object(c.jsx)(f, {
                     to: "https://github.com/yb/uptime-status",
-                    text: " yb/uptime-status",
+                    text: "yb/uptime-status",
                   }),
                 ],
               }),
