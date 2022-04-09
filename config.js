@@ -1,7 +1,7 @@
 // 配置
 window.Config = {
   // 站点名
-  SiteName: "Uptime Status",
+  SiteName: "See Yue 站点检测",
 
   // 站点链接
   SiteUrl: "/",
@@ -11,14 +11,15 @@ window.Config = {
   // 因官网 API 时不时的会 CROS 报错，可填自定义反代域名
   // 详见 https://github.com/yb/uptime-status/ 说明
   ApiDomain: "api.uptimerobot.com",
+  // ApiDomain: "uptimerobot.jinghu-moon.workers.dev",
 
   // UptimeRobot Api Keys
   // 支持 Monitor-Specific 和 Read-Only 两只 Api Key
   ApiKeys: [
-    "m791325658-1313e0f488f04a36afbd9447",
-    "m791325657-65e1fa9a8e3fa4da36c4b829",
-    "m784497419-de55aa09902ccb3ab22d548a",
-    "m784496436-71a4bf7b1e3bdf7756be131b",
+    "m791325658-1313e0f488f04a36afbd9447", // 望月的图床
+    "m791325657-65e1fa9a8e3fa4da36c4b829", // 望月的导航站
+    "m791360717-3f4a165327fd2bc352212fb3", // 望月的网站流量统计
+    "m791360706-272efe14a0bb3d9e57583e45", // 望月的网站状态监测
   ],
 
   // 是否显示监测站点的链接
@@ -32,12 +33,16 @@ window.Config = {
   // 导航栏菜单
   Navi: [
     {
-      text: "Homepage",
-      url: "https://status.org.cn/",
+      text: "主页",
+      url: "https://seeyue.top",
     },
+    // {
+    //   text: "GitHub",
+    //   url: "https://github.com/yb/uptime-status",
+    // },
     {
-      text: "GitHub",
-      url: "https://github.com/yb/uptime-status",
+      text: "博客",
+      url: "https://blog.seeyue.top",
     },
   ],
 };

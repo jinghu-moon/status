@@ -1,1 +1,66 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/><title>Uptime Status</title><link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/><script src="./config.js"></script><link href="./static/css/main.0a38b630.css" rel="stylesheet"></head><body><div id="app"></div><script src="./static/js/main.4a0f818c.js"></script></body></html>
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>See Yue 站点检测</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <script src="./config.js"></script>
+  <link href="./static/css/main.css" rel="stylesheet">
+  <link href="https://cdn1.tianli0.top/gh/jinghu-moon/Blog_Static_Files@main/font/LXGWWenKai-Regular.woff2"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: "LXGW WenKai";
+    }
+
+    #header .logo,
+    #footer a {
+      font-family: "Mcrisoft YaHei";
+    }
+
+    .container {
+      font-size: 14px;
+    }
+
+    #uptime .meta .link {
+      background-image: url("./static/media/link.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 6px;
+      width: 15px;
+      height: 15px;
+      opacity: .7;
+      transition: opacity .3s ease-out;
+      position: relative;
+      text-indent: -99999px;
+    }
+
+    #uptime .meta .link:hover {
+      background-image: url("./static/media/link_hover.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 15px;
+      height: 15px;
+      opacity: 1;
+    }
+
+    /* 扩大链接图标点击范围 */
+    #uptime .meta .link::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      bottom: -40px;
+      left: -40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script src="./static/js/main.js"></script>
+</body>
+
+</html>
